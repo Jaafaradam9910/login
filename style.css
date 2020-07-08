@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  width: 300px;
+  height: 370px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.heading h1 {
+  letter-spacing: 2px;
+  margin: 20px 0;
+  font-size: 45px;
+  text-shadow: 0 0 2px orange;
+}
+
+[type="text"] {
+  margin-top: 20px;
+  outline: none;
+  border-style: none;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+[type="text"]::placeholder {
+  color: #fff;
+}
+
+[type="password"] {
+  margin-top: 20px;
+  outline: none;
+  border-style: none;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+[type="password"]::placeholder {
+  color: #fff;
+}
+
+.submit-btn {
+  margin-top: 3.5em;
+}
+
+[type="submit"] {
+  outline: none;
+  border-style: none;
+  border-radius: 20px;
+  padding: 10px 6em;
+  font-size: 16px;
+  background-color: #a40606;
+  background-image: linear-gradient(315deg, #FE6B40 0%, #EE4238 74%);
+  color: #fff;
+}
+
+.forgot {
+  float: left;
+  margin: 20px 0 20px 35px;
+}
+
+.forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 700px)
+{
+  body {
+    background: url('bg1.jpg');
+    background-size: 100%;
+  }
+}
